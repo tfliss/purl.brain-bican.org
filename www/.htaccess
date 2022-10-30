@@ -1,0 +1,4 @@
+### Global Failovers!!!
+
+# Redirect anything else to the GitHub page.
+RedirectMatch temp ^.*$ https://github.com/hkir-dev/purl.bican.org/
