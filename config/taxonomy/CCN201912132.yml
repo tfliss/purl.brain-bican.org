@@ -11,8 +11,7 @@ term_browser: custom
 entries:
 
 - exact: /CCN201912132.json
-  replacement: https://github.com/AllenInstitute/MOp_taxonomies_ontology/blob/main/marmosetM1_CCN201912132/nomenclature_table_CCN201912132.csv
-#  replacement: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/marmosetM1_CCN201912132/updated_dendrogram_CCN201912132.json
+  replacement: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/marmosetM1_CCN201912132/updated_dendrogram_CCN201912132.json
 
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v
