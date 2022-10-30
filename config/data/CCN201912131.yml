@@ -1,0 +1,24 @@
+# PURL configuration for http://purl.bican.org/data/CCN201912131
+
+idspace: CCN201912131
+base_url: /data/CCN201912131
+
+products:
+- CCN201912131.json: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/humanM1_CCN201912131/updated_dendrogram_CCN201912131.json
+
+term_browser: custom
+
+entries:
+
+- exact: /single_nuclei_SMART-Seq_v4
+  replacement: https://assets.nemoarchive.org/dat-ci7q9k4
+
+- exact: /single_cell_Patch-seq
+  replacement: https://dandiarchive.org/dandiset/000043/draft
+
+- exact: /single_nuclei_SNARE-seq2
+  replacement: https://knowledge.brain-map.org/data/TGNO3HM2KO03B5EWGBT/summary
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: http://data.nemoarchive.org/biccn/grant/u01_lein/linnarsson/transcriptome/sncell/10x_v2/human/

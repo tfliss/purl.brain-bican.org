@@ -73,10 +73,19 @@ build-%:
 # Build recipe for all projects
 #
 # Convert the YAML files of every project to .htaccess files and place them
-# in the www/obo directory.
+# in the www/bican directory.
 
 # Final output directory:
-www/obo/:
+www/bican/:
+	mkdir -p $@
+
+www/taxonomy/:
+	mkdir -p $@
+
+www/ontology/:
+	mkdir -p $@
+
+www/data/:
 	mkdir -p $@
 
 # When a new build is created, the old build's files are moved here, in a subdirectory
@@ -87,18 +96,21 @@ backup/:
 
 # The main build target:
 .PHONY: build
-build: BACKUP = backup/obo-$(shell python -c "import time,os;print(time.strftime('%Y%m%d-%H%M%S',time.gmtime(os.path.getmtime('www/obo'))))")
-build: | backup/ www/obo/
-	tools/translate_yaml.py --input_dir config --output_dir temp/obo
-	rm -rf temp/obo/obo temp/obo/OBO
+build: BACKUP = backup/bican-$(shell python -c "import time,os;print(time.strftime('%Y%m%d-%H%M%S',time.gmtime(os.path.getmtime('www/bican'))))")
+build: | backup/ www/bican/ www/taxonomy/ www/ontology/ www/data/
+	tools/translate_yaml.py --input_dir config/taxonomy --output_dir temp/taxonomy
+	tools/translate_yaml.py --input_dir config/ontology --output_dir temp/ontology
+	tools/translate_yaml.py --input_dir config/data --output_dir temp/data
+	tools/translate_yaml.py --input_dir config --output_dir temp/bican
+	rm -rf temp/bican/bican temp/bican/BICAN
 	rm -rf temp/taxonomy
 	rm -rf temp/ontology
 	rm -rf temp/data
-	-test -e www/obo && mv www/obo $(BACKUP)
-	cp -R temp/obo www/taxonomy
-	cp -R temp/obo www/ontology
-	cp -R temp/obo www/data
-	mv temp/obo www/obo
+	-test -e www/bican && mv www/bican $(BACKUP)
+	mv temp/taxonomy www/taxonomy
+	mv temp/ontology www/ontology
+	mv temp/data www/data
+	mv temp/bican www/bican
 	rmdir temp
 
 

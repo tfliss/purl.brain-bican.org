@@ -9,8 +9,8 @@ https://httpd.apache.org/docs/2.4/mod/mod_alias.html
 
 The `foo.yml` file will generate output for two targets:
 
-1. /www/obo/foo/.htaccess
-2. /www/obo/.htaccess
+1. /www/bican/foo/.htaccess
+2. /www/bican/.htaccess
 
 Target (1) only applies to project `foo`.
 It is generated from `base_url` and the `entries` list.
@@ -263,7 +263,7 @@ def process_product(product):
   and return an Apache RedirectMatch directive string.
   """
   key = [k for k in product].pop()
-  source = unquote('(?i)^/obo/%s$' % key)
+  source = unquote('(?i)^/bican/%s$' % key)
   replacement = unquote(product[key])
   return 'RedirectMatch temp "%s" "%s"' % (source, replacement)
 
@@ -345,7 +345,7 @@ def main():
   corresponding to each given YAML file, containing the `entries` specified in the
   YAML file. If a directory containing YAML files is specified instead, then in
   addition, the base redirects, terms, and products specified in the YAML file of
-  each project will be appended to the top-level obo/.htaccess file in the given
+  each project will be appended to the top-level bican/.htaccess file in the given
   output directory.''')
 
   # This option is required:
@@ -441,10 +441,10 @@ def main():
       products[idspace] = translate_products(yamldoc)
       terms[idspace] = translate_terms(yamldoc, idspace)
 
-    # Now write the entries for the 'OBO' idspace to a global .htaccess file located at the top
+    # Now write the entries for the 'BICAN' idspace to a global .htaccess file located at the top
     # level of the output directory:
     with open('{}/.htaccess'.format(normalised_output_dir), 'w') as outfile:
-      write_entries(entries['OBO'], '{}/obo.yml'.format(normalised_input_dir), outfile)
+      write_entries(entries['BICAN'], '{}/bican.yml'.format(normalised_input_dir), outfile)
 
     # Append the base redirects, products, and terms to the global .htaccess file:
     with open('{}/.htaccess'.format(normalised_output_dir), 'a') as outfile:

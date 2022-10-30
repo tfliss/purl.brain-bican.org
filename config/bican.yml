@@ -1,0 +1,14 @@
+# PURL configuration for http://purl.bican.org/bican/
+
+idspace: BICAN
+base_url: /bican
+
+term_browser: custom
+
+
+### Entries
+entries:
+
+### OBO Format Specification
+- exact: /home.html
+  replacement: https://github.com/hkir-dev/purl.bican.org
