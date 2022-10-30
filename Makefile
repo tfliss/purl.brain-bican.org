@@ -103,10 +103,10 @@ build: | backup/ www/bican/ www/taxonomy/ www/ontology/ www/data/
 	tools/translate_yaml.py --input_dir config/data --output_dir temp/data
 	tools/translate_yaml.py --input_dir config --output_dir temp/bican
 	rm -rf temp/bican/bican temp/bican/BICAN
-	rm -rf temp/taxonomy
-	rm -rf temp/ontology
-	rm -rf temp/data
 	-test -e www/bican && mv www/bican $(BACKUP)
+	-test -e www/taxonomy && mv www/taxonomy $(BACKUP)
+	-test -e www/ontology && mv www/ontology $(BACKUP)
+	-test -e www/data && mv www/data $(BACKUP)
 	mv temp/taxonomy www/taxonomy
 	mv temp/ontology www/ontology
 	mv temp/data www/data
