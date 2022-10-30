@@ -441,10 +441,10 @@ def main():
       products[idspace] = translate_products(yamldoc)
       terms[idspace] = translate_terms(yamldoc, idspace)
 
-    # Now write the entries for the 'BICAN' idspace to a global .htaccess file located at the top
-    # level of the output directory:
-    with open('{}/.htaccess'.format(normalised_output_dir), 'w') as outfile:
-      write_entries(entries['BICAN'], '{}/bican.yml'.format(normalised_input_dir), outfile)
+    # # Now write the entries for the 'BICAN' idspace to a global .htaccess file located at the top
+    # # level of the output directory:
+    # with open('{}/.htaccess'.format(normalised_output_dir), 'w') as outfile:
+    #   write_entries(entries['BICAN'], '{}/bican.yml'.format(normalised_input_dir), outfile)
 
     # Append the base redirects, products, and terms to the global .htaccess file:
     with open('{}/.htaccess'.format(normalised_output_dir), 'a') as outfile:
