@@ -8,19 +8,7 @@ products:
 
 base_redirect: https://knowledge.brain-map.org/celltypes/CCN201912132
 
-term_browser: custom
-
 entries:
 
 - exact: /CCN201912132.json
   replacement: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/marmosetM1_CCN201912132/updated_dendrogram_CCN201912132.json
-
-- prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v
-  tests:
-    - from: /releases/2022-01-24/
-      to: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v2022-01-24/
-
-## generic fall-through, serve direct from github by default
-- prefix: /
-  replacement: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/marmosetM1_CCN201912132/

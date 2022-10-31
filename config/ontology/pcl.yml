@@ -14,22 +14,19 @@ example_terms:
 
 entries:
 
+- exact: /pcl-base.owl
+  replacement: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-base.owl
+
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v
   tests:
     - from: /releases/2022-01-24/
       to: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v2022-01-24/
-
-- prefix: /tracker/
-  replacement: https://github.com/obophenotype/provisional_cell_ontology/issues
-
-- prefix: /about/
-  replacement: https://github.com/obophenotype/provisional_cell_ontology#readme
   
-- prefix: /bds/kg/
+- exact: /bds/kg
   replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:7472/browser
   
-- prefix: /bds/api/
+- exact: /bds/api
   replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:8484/bds/
 
 ## generic fall-through, serve direct from github by default

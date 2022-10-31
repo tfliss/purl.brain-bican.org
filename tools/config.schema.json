@@ -125,5 +125,5 @@
 			}
 		}
 	},
-	"required": ["idspace", "base_url", "term_browser"]
+	"required": ["idspace", "base_url"]
 }

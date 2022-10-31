@@ -1,7 +1,7 @@
-# PURL configuration for http://purl.obolibrary.org/obo/test1
+# PURL configuration for http://purl.bican.org/ontology/test1
 
 idspace: TEST1
-base_url: /obo/test1
+base_url: /ontology/test1
 
 products:
 - test1.owl: TODO

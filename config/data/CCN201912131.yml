@@ -19,6 +19,6 @@ entries:
 - exact: /single_nuclei_SNARE-seq2
   replacement: https://knowledge.brain-map.org/data/TGNO3HM2KO03B5EWGBT/summary
 
-## generic fall-through, serve direct from github by default
+## generic fall-through
 - prefix: /
   replacement: http://data.nemoarchive.org/biccn/grant/u01_lein/linnarsson/transcriptome/sncell/10x_v2/human/
