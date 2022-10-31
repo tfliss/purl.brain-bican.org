@@ -123,3 +123,6 @@ Every `prefix` or `regex` entry should also have a `tests:` keyword, with a list
 
 Apache RedirectMatch directives are processed in the [order that they appear](https://httpd.apache.org/docs/2.4/mod/mod_alias.html#order) in the configuration file. Be careful that your `prefix` and `regex` entries do not conflict with your other entries. The YAML-to-Apache translation preserves the order of entries, so you can control the order of processing, but it's best to avoid conflicts.
 
+## Deployment
+
+See Docker based deployment instructions from [here](docker/README.md) 

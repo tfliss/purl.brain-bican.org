@@ -3,8 +3,8 @@
 #### Installation
 
 - These steps were successfully tested on:
-    - macOS (10.15.3)
-    - Docker (19.03.5)
+    - macOS (10.15.3), ubuntu (22.04)
+    - Docker (19.03.5, 20.10.20)
 
 #### Prerequisites
 
@@ -38,11 +38,11 @@ docker image list | grep purl
 
 #### Launch Container
 
-Run interactively and access the web server using [http://localhost:8080](http://localhost:8080).
+Run interactively and access the web server using [http://localhost](http://localhost).
 Be sure to specify the absolute path to s3 credentials.
 
 ```sh
-docker run --name purl -v REPLACE_ME:/opt/credentials/s3cfg -p 8080:80 -it purl:latest /bin/bash
+docker run --name purl -v REPLACE_ME:/opt/credentials/s3cfg -p 80:80 -it purl:latest /bin/bash
 
 sudo cat /opt/credentials/s3cfg   # Make sure crendetials were mounted properly
 ps -ef                            # Make sure apache is running
