@@ -6,6 +6,8 @@ base_url: /taxonomy/CCN201912132
 products:
 - CCN201912132.json: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/marmosetM1_CCN201912132/updated_dendrogram_CCN201912132.json
 
+base_redirect: https://knowledge.brain-map.org/celltypes/CCN201912132
+
 term_browser: custom
 
 entries:

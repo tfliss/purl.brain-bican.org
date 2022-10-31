@@ -9,6 +9,5 @@ term_browser: custom
 ### Entries
 entries:
 
-### OBO Format Specification
 - exact: /home.html
   replacement: https://github.com/hkir-dev/purl.bican.org

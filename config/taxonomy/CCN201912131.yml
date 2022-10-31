@@ -6,6 +6,8 @@ base_url: /taxonomy/CCN201912131
 products:
 - CCN201912131.json: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/humanM1_CCN201912131/updated_dendrogram_CCN201912131.json
 
+base_redirect: https://knowledge.brain-map.org/celltypes/CCN201912131
+
 term_browser: custom
 
 entries:
