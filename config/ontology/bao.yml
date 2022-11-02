@@ -8,7 +8,7 @@ products:
 - bao.obo: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.obo
 - bao.json: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.obo
 
-term_browser: custom
+term_browser: ols
 example_terms:
 - BAO_0000000
 
