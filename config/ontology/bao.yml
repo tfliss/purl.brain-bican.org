@@ -2,14 +2,15 @@
 
 idspace: BAO
 base_url: /ontology/bao
-term_browser: ols
 
 
 products:
+# http://purl.bican.org/ontology/bao/bao.owl
 - bao.owl: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.owl
 - bao.obo: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.obo
 - bao.json: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.obo
 
+term_browser: ols
 example_terms:
 - BAO_0000000
 
