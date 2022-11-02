@@ -23,9 +23,6 @@ entries:
 # http://purl.bican.org/ontology/bao/latest/bao.owl
 - prefix: /latest/
   replacement: https://github.com/brain-bican/bican_application_ontology/blob/main/
-  tests:
-    - from: /latest/bao.owl
-      to: https://github.com/brain-bican/bican_application_ontology/blob/main/bao.owl
 
 # http://purl.bican.org/ontology/bao/releases/2022-11-02/bao.owl
 - regex: ^/ontology/bao/releases/(.*)/bao\.owl$
