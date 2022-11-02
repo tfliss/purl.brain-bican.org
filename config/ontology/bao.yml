@@ -1,0 +1,35 @@
+# PURL configuration for http://purl.bican.org/ontology/bao
+
+idspace: BAO
+base_url: /ontology/bao
+
+products:
+- bao.owl: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.owl
+- bao.obo: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.obo
+- bao.json: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.obo
+
+term_browser: custom
+example_terms:
+- BAO_0000000
+
+entries:
+
+- exact: /bao-base.owl
+  replacement: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao-base.owl
+
+- prefix: /latest/
+  replacement: https://github.com/brain-bican/bican_application_ontology/blob/main/
+  tests:
+    - from: /latest/bao.owl
+      to: https://github.com/brain-bican/bican_application_ontology/blob/main/bao.owl
+
+- regex: ^/ontology/bao/releases/(.*)/bao\.owl$
+  replacement: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/$1/bao.owl
+  tests:
+  - from: /bao/releases/2022-11-02/bao.owl
+    to: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/2022-11-02/bao.owl
+
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/master/
