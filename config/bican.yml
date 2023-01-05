@@ -10,4 +10,4 @@ term_browser: custom
 entries:
 
 - exact: /home.html
-  replacement: https://github.com/hkir-dev/purl.bican.org/
+  replacement: https://github.com/brain-bican/purl.bican.org/
