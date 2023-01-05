@@ -25,7 +25,7 @@ secret_key = REPLACE_ME
 #### Clone the repository
 
 ```sh
-git clone https://github.com/hkir-dev/purl.bican.org.git
+git clone https://github.com/brain-bican/purl.bican.org.git
 ```
 
 #### Build Purl Image
