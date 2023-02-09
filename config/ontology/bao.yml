@@ -1,11 +1,11 @@
-# PURL configuration for http://purl.bican.org/ontology/bao
+# PURL configuration for http://purl.brain-bican.org/ontology/bao
 
 idspace: BAO
 base_url: /ontology/bao
 
 
 products:
-# http://purl.bican.org/ontology/bao/bao.owl
+# http://purl.brain-bican.org/ontology/bao/bao.owl
 - bao.owl: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.owl
 - bao.obo: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.obo
 - bao.json: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao.obo
@@ -16,15 +16,15 @@ example_terms:
 
 entries:
 
-# http://purl.bican.org/ontology/bao/bao-base.owl
+# http://purl.brain-bican.org/ontology/bao/bao-base.owl
 - exact: /bao-base.owl
   replacement: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bao-base.owl
 
-# http://purl.bican.org/ontology/bao/latest/bao.owl
+# http://purl.brain-bican.org/ontology/bao/latest/bao.owl
 - prefix: /latest/
   replacement: https://github.com/brain-bican/bican_application_ontology/blob/main/
 
-# http://purl.bican.org/ontology/bao/releases/2022-11-02/bao.owl
+# http://purl.brain-bican.org/ontology/bao/releases/2022-11-02/bao.owl
 - regex: ^/ontology/bao/releases/(.*)/bao\.owl$
   replacement: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/$1/bao.owl
   tests:
