@@ -57,5 +57,5 @@ jobs:
 
       - name: Run Tests
         run: |
-          docker run -w /var/www/purl.bican.org -v ${{ github.workspace }}:/var/www/purl.bican.org -t purl:latest sudo make all test
+          docker run -w /var/www/purl.brain-bican.org -v ${{ github.workspace }}:/var/www/purl.brain-bican.org -t purl:latest sudo make all test
 

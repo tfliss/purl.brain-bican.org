@@ -11,7 +11,7 @@
     mode:      production
     domain:    purl.brain-bican.org
     owner:     brain-bican
-    repo:      purl.bican.org
+    repo:      purl.brain-bican.org
     repo_dir:  "/var/www/{{ repo }}"
     repo_url:  "https://github.com/{{ owner }}/{{ repo }}.git"
     cron_job:  "cd {{ repo_dir }} && make safe-update"
