@@ -1,5 +1,5 @@
 ---
-# This is an Ansible playbook specifying the instructions for deploying the purl.bican.org site.
+# This is an Ansible playbook specifying the instructions for deploying the purl.brain-bican.org site.
 
 - hosts: all
   user: ubuntu
@@ -9,8 +9,8 @@
 
   vars:
     mode:      production
-    domain:    purl.bican.org
-    owner:     hkir-dev
+    domain:    purl.brain-bican.org
+    owner:     brain-bican
     repo:      purl.bican.org
     repo_dir:  "/var/www/{{ repo }}"
     repo_url:  "https://github.com/{{ owner }}/{{ repo }}.git"

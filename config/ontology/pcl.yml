@@ -1,4 +1,4 @@
-# PURL configuration for http://purl.bican.org/ontology/pcl
+# PURL configuration for http://purl.brain-bican.org/ontology/pcl
 
 idspace: PCL
 base_url: /ontology/pcl

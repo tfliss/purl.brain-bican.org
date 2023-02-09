@@ -33,7 +33,7 @@ ONTOLOGY_IDS ?= $(patsubst config/%.yml,%,$(wildcard config/*.yml))
 DEVELOPMENT ?= localhost
 
 # Production server.
-PRODUCTION ?= purl.bican.org
+PRODUCTION ?= purl.brain-bican.org
 
 
 ### Boilerplate

@@ -44,7 +44,7 @@ exact = []
 prefix = []
 
 # Define two template strings.
-header_template = '''# PURL configuration for http://purl.bican.org%s
+header_template = '''# PURL configuration for http://purl.brain-bican.org%s
 
 idspace: %s
 base_url: %s

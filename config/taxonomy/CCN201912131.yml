@@ -1,4 +1,4 @@
-# PURL configuration for http://purl.bican.org/taxonomy/CCN201912131
+# PURL configuration for http://purl.brain-bican.org/taxonomy/CCN201912131
 
 idspace: CCN201912131
 base_url: /taxonomy/CCN201912131
@@ -10,6 +10,6 @@ base_redirect: https://knowledge.brain-map.org/celltypes/CCN201912131
 
 entries:
 
-# http://purl.bican.org/taxonomy/CCN201912131/CCN201912131.json
+# http://purl.brain-bican.org/taxonomy/CCN201912131/CCN201912131.json
 - exact: /CCN201912131.json
   replacement: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/humanM1_CCN201912131/updated_dendrogram_CCN201912131.json
