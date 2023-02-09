@@ -1,4 +1,4 @@
-## Using purl.bican.org.git in docker
+## Using purl.brain-bican.org.git in docker
 
 #### Installation
 
@@ -25,13 +25,13 @@ secret_key = REPLACE_ME
 #### Clone the repository
 
 ```sh
-git clone https://github.com/brain-bican/purl.bican.org.git
+git clone https://github.com/brain-bican/purl.brain-bican.org.git
 ```
 
 #### Build Purl Image
 
 ```sh
-cd purl.bican.org
+cd purl.brain-bican.org
 docker build -f docker/Dockerfile -t purl:latest .
 docker image list | grep purl 
 ```
@@ -73,7 +73,7 @@ docker image rm purl:latest
 Run tests and safe-update.
 
 ```sh
-cd /var/www/purl.bican.org
+cd /var/www/purl.brain-bican.org
 sudo make all test
 sudo make safe-update
 ```

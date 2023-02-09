@@ -1,5 +1,5 @@
 owner:      brain-bican
-repo:       purl.bican.org
+repo:       purl.brain-bican.org
 repo_url:   "https://github.com/{{ owner }}/{{ repo }}.git"
 branch:     master
 image:      "{{ repo }}"

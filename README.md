@@ -8,11 +8,11 @@ This repository is cloned and customized from [OBO Foundry Permanent URLs](https
 
 Please use one of these four options to make changes to the PURLs:
 
-1. [Create a new issue](https://github.com/brain-bican/purl.bican.org/issues/new) describing the change you require.
+1. [Create a new issue](https://github.com/brain-bican/purl.brain-bican.org/issues/new) describing the change you require.
 
-2. [Browse to the configuration file you want to change](https://github.com/brain-bican/purl.bican.org/tree/master/config) and click the "pencil" icon to edit it.
+2. [Browse to the configuration file you want to change](https://github.com/brain-bican/purl.brain-bican.org/tree/master/config) and click the "pencil" icon to edit it.
 
-3. [Add a new configuration file](https://github.com/brain-bican/purl.bican.org/new/master/config).
+3. [Add a new configuration file](https://github.com/brain-bican/purl.brain-bican.org/new/master/config).
 
 4. [Fork this repository](https://help.github.com/articles/fork-a-repo/) and [make a pull request](https://help.github.com/articles/using-pull-requests/).
 
@@ -80,7 +80,7 @@ In the most common case, your PURL should match a unique URL and redirect to a u
      - exact: /pcl-base.owl 
         replacement: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-base.owl
 
-This entry will match exactly the URL `http://purl.brain-bican.org/ontology/pcl/pcl-base.owl`, and it will redirect to exactly `https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-base.owl`. The matched domain name is fixed `http://purl.bican.org`; the next part is defined by `base_url` `/ontology/pcl/` (namespace should be compatible with the folder `ontology` that the config file resides); the final part is taken from the entry `/pcl-base.owl`. The replacement is expected to be a valid, absolute URL, starting with `http`.
+This entry will match exactly the URL `http://purl.brain-bican.org/ontology/pcl/pcl-base.owl`, and it will redirect to exactly `https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-base.owl`. The matched domain name is fixed `http://purl.brain-bican.org`; the next part is defined by `base_url` `/ontology/pcl/` (namespace should be compatible with the folder `ontology` that the config file resides); the final part is taken from the entry `/pcl-base.owl`. The replacement is expected to be a valid, absolute URL, starting with `http`.
 
 Behind the scenes, the entry is translated into a case-insensitive Apache RedirectMatch directive in `ontology/pcl/.htaccess` by escaping special characters and "anchoring" with initial `^`, the project's base URL, and final `$`:
 
@@ -94,7 +94,7 @@ You can also match and replace just the first part of a URL, leaving the rest un
     - prefix: /releases/
       replacement: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v
 
-This entry will match the URL `http://purl.brain-bican.org/ontology/pcl/releases/2022-01-24/pcl.owl` (for example), replace the first part `http://purl.bican.org/ontology/pcl/releases/` with `https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v`, resulting in `https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v2022-01-24/pcl.owl`. Effectively, the `pcl.owl` is appended to the replacement.
+This entry will match the URL `http://purl.brain-bican.org/ontology/pcl/releases/2022-01-24/pcl.owl` (for example), replace the first part `http://purl.brain-bican.org/ontology/pcl/releases/` with `https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v`, resulting in `https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v2022-01-24/pcl.owl`. Effectively, the `pcl.owl` is appended to the replacement.
 
 The translation is similar, with the addition of `(.*)` wildcard and a `$1` "backreference" at the ends of the given strings:
 
