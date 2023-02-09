@@ -1,0 +1,37 @@
+# PURL configuration for http://purl.brain-bican.org/ontology/bicano
+
+idspace: BICANO
+base_url: /ontology/bicano
+
+
+products:
+# http://purl.brain-bican.org/ontology/bicano/bicano.owl
+- bicano.owl: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bicano.owl
+- bicano.obo: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bicano.obo
+- bicano.json: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bicano.obo
+
+term_browser: ols
+example_terms:
+- BICANO_0000000
+
+entries:
+
+# http://purl.brain-bican.org/ontology/bicano/bicano-base.owl
+- exact: /bicano-base.owl
+  replacement: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/bicano-base.owl
+
+# http://purl.brain-bican.org/ontology/bicano/latest/bicano.owl
+- prefix: /latest/
+  replacement: https://github.com/brain-bican/bican_application_ontology/blob/main/
+
+# http://purl.brain-bican.org/ontology/bicano/releases/2022-11-02/bicano.owl
+- regex: ^/ontology/bicano/releases/(.*)/bicano\.owl$
+  replacement: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/$1/bicano.owl
+  tests:
+  - from: /bicano/releases/2022-11-02/bicano.owl
+    to: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/2022-11-02/bicano.owl
+
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/brain-bican/bican_application_ontology/main/
