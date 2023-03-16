@@ -21,3 +21,5 @@ entries:
   replacement: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/humanM1_CCN201912131/TIM_TEST3.json
 - exact: /TIM_TEST5.json
   replacement: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/humanM1_CCN201912131/TIM_TEST5.json
+- exact: /TIM_TEST6.json
+  replacement: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/humanM1_CCN201912131/TIM_TEST6.json
