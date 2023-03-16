@@ -10,17 +10,17 @@ term_browser: custom
 
 entries:
 
-- exact: /single_nuclei_SMART-Seq_v4
-  replacement: https://assets.nemoarchive.org/dat-ci7q9k4
-
-- exact: /TIMF_TEST
-  replacement: https://www.brain-map.org
-
-- exact: /single_cell_Patch-seq
-  replacement: https://dandiarchive.org/dandiset/000043/draft
-
-- exact: /single_nuclei_SNARE-seq2
-  replacement: https://knowledge.brain-map.org/data/TGNO3HM2KO03B5EWGBT/summary
+# - exact: /single_nuclei_SMART-Seq_v4
+#   replacement: https://assets.nemoarchive.org/dat-ci7q9k4
+# 
+# - exact: /TIMF_TEST
+#   replacement: https://www.brain-map.org
+# 
+# - exact: /single_cell_Patch-seq
+#   replacement: https://dandiarchive.org/dandiset/000043/draft
+# 
+# - exact: /single_nuclei_SNARE-seq2
+#   replacement: https://knowledge.brain-map.org/data/TGNO3HM2KO03B5EWGBT/summary
 
 ## generic fall-through
 - prefix: /
