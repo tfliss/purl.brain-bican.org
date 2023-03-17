@@ -10,7 +10,7 @@
   vars:
     mode:      production
     domain:    purl.brain-bican.org
-    owner:     brain-bican
+    owner:     tfliss
     repo:      purl.brain-bican.org
     repo_dir:  "/var/www/{{ repo }}"
     repo_url:  "https://github.com/{{ owner }}/{{ repo }}.git"

@@ -1,4 +1,4 @@
-owner:      brain-bican
+owner:      tfliss
 repo:       purl.brain-bican.org
 repo_url:   "https://github.com/{{ owner }}/{{ repo }}.git"
 branch:     master
