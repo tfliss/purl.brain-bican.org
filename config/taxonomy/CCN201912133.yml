@@ -1,0 +1,14 @@
+# PURL configuration for http://purl.brain-bican.org/taxonomy/CCN201912132
+
+idspace: CCN201912132
+base_url: /taxonomy/CCN201912132
+
+products:
+- CCN201912132.json: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/marmosetM1_CCN201912132/updated_dendrogram_CCN201912132.json
+
+base_redirect: https://knowledge.brain-map.org/celltypes/CCN201912132
+
+entries:
+
+- exact: /CCN201912132.json
+  replacement: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/marmosetM1_CCN201912132/updated_dendrogram_CCN201912132.json
